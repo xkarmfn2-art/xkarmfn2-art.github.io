@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>월간 서아 — 정서아 포트폴리오</title>
+    <meta name="description" content="가상 브랜드 디자이너 정서아의 작업 기록. 브랜딩, 에디토리얼, 패키지, 디지털 룩북. 인물과 프로젝트는 모두 허구입니다.">
+    <meta name="author" content="정서아 (가상)">
+    <meta name="theme-color" content="#F43142">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="canonical" href="https://xkarmfn2-art.github.io/">
+    <meta property="og:title" content="월간 서아 — 정서아 포트폴리오">
+    <meta property="og:description" content="가상 디자이너 정서아의 브랜딩, 에디토리얼, 패키지, 디지털 작업 기록.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xkarmfn2-art.github.io/">
+    <meta property="og:locale" content="ko_KR">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip" href="#content">본문으로 건너뛰기</a>
+    <header class="site-header">
+      <div class="container header-top">
+        <a class="logo" href="#top">서아<span class="sr-only">, 아틀리에 서아 홈</span></a>
+        <form class="search" id="search-form" role="search">
+          <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.25" fill="none" stroke="currentColor" stroke-width="2"></circle>
+            <path d="M16 16.5 20 20.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+          <label class="sr-only" for="q">작업 검색</label>
+          <input id="q" type="search" placeholder="찾고 싶은 작업을 검색해 보세요" autocomplete="off" enterkeyhint="search" aria-controls="project-grid">
+          <button type="button" class="search-clear" id="search-clear" hidden>지우기</button>
+        </form>
+        <nav class="nav" aria-label="페이지">
+          <a href="#lookbook">작업</a>
+          <a href="#voices">후기</a>
+          <a href="#contact">연락</a>
+        </nav>
+        <a class="btn-dark" href="#lookbook">작업 보기</a>
+      </div>
+      <div class="container">
+        <div class="tab-row" role="group" aria-label="작업 분류" aria-controls="project-grid">
+          <button type="button" class="tab" data-filter="all" aria-pressed="true">
+            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M4 4h6.5v6.5H4V4zm9.5 0H20v6.5h-6.5V4zM4 13.5h6.5V20H4v-6.5zm9.5 0H20V20h-6.5v-6.5z"/></svg>
+            전체
+          </button>
+          <button type="button" class="tab" data-filter="brand" aria-pressed="false">브랜딩</button>
+          <button type="button" class="tab" data-filter="editorial" aria-pressed="false">에디토리얼</button>
+          <button type="button" class="tab" data-filter="package" aria-pressed="false">패키지</button>
+          <button type="button" class="tab" data-filter="digital" aria-pressed="false">디지털</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="content">
+      <div class="container">
+        <noscript>
+          <p class="noscript">분류 필터, 검색, 작업 상세 창은 스크립트를 사용합니다. 목록과 메일 주소는 그대로 읽을 수 있습니다.</p>
+        </noscript>
+
+        <section class="hero" id="top" aria-labelledby="hero-title">
+          <div class="hero-inner">
+            <div class="hero-copy">
+              <p class="eyebrow" lang="en">Every season · Atelier Seoa</p>
+              <h1 id="hero-title">월간 <em>서아</em></h1>
+              <p class="hero-sub">브랜드의 온도를 한 장면에 담습니다.<br>가상 디자이너 정서아의 작업 기록입니다.</p>
+              <a class="btn-light" href="#lookbook">룩북 보러가기 <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="ticket-wrap">
+              <div class="ticket">
+                <p class="ticket-kicker">이번 시즌 인덱스</p>
+                <p class="ticket-num">12</p>
+                <p class="ticket-sub">개의 기록된 작업<br>2018 — 2026</p>
+              </div>
+              <p class="badge badge-coral">성수 · 서울</p>
+              <p class="badge badge-ghost">가상 포트폴리오</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="areas" aria-labelledby="areas-title">
+          <div class="section-head">
+            <h2 id="areas-title">작업 영역</h2>
+            <p class="lead">이름, 지면, 첫 화면. 세 가지로 나눕니다.</p>
+          </div>
+          <p class="sublead">패키지 작업은 룩북 분류에서 이어서 볼 수 있습니다.</p>
+          <div class="services">
+            <article class="card service">
+              <span class="tile tile-pink" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><rect x="4" y="4" width="16" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              </span>
+              <h3>브랜드 설계</h3>
+              <p class="desc">이름과 색, 말투를 한 세트로 맞춥니다. 로고보다 인상이 먼저 남게.</p>
+              <a class="text-link" href="#lookbook" data-jump="brand">브랜딩 작업 보기 <span aria-hidden="true">→</span></a>
+              <span class="wm" aria-hidden="true">01</span>
+            </article>
+            <article class="card service">
+              <span class="tile tile-peach" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 7h14M5 12h10M5 17h12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </span>
+              <h3>지면과 포스터</h3>
+              <p class="desc">잡지와 포스터의 그리드를 잡습니다. 여백이 문장처럼 읽히게 둡니다.</p>
+              <a class="text-link" href="#lookbook" data-jump="editorial">에디토리얼 보기 <span aria-hidden="true">→</span></a>
+              <span class="wm" aria-hidden="true">02</span>
+            </article>
+            <article class="card service">
+              <span class="tile tile-lilac" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22"><rect x="4" y="5" width="16" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 20h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </span>
+              <h3>화면의 첫 스크롤</h3>
+              <p class="desc">배너와 앱의 첫 화면을 설계합니다. 누르기 전에 이해되도록.</p>
+              <a class="text-link" href="#lookbook" data-jump="digital">디지털 작업 보기 <span aria-hidden="true">→</span></a>
+              <span class="wm" aria-hidden="true">03</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="block" id="lookbook" aria-labelledby="lookbook-title">
+          <div class="section-head">
+            <h2 id="lookbook-title">룩북</h2>
+            <p class="lead" id="result-count" aria-live="polite">12개의 작업</p>
+          </div>
+          <p class="sublead">열두 개의 가상 프로젝트입니다. 분류하거나 검색해 골라 보세요.</p>
+          <div class="grid" id="project-grid">
+            <article class="card project" id="project-winter" data-category="editorial" data-search="겨울 시장 룩북 에디토리얼 2026 윈터 마켓 인쇄 아트 디렉션 editorial">
+              <div class="cover cover-winter" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+              <p class="kicker">에디토리얼 · 2026</p>
+              <h3>겨울 시장</h3>
+              <p class="desc">눈 대신 여백을 넓힌 24면 인쇄 룩북. 표지는 붉은 아치 하나.</p>
+              <a class="text-link" href="#project-winter" aria-haspopup="dialog">기록 보기 <span aria-hidden="true">→</span><span class="sr-only">, 겨울 시장</span></a>
+              <span class="wm" aria-hidden="true">01</span>
+              <template>
+                <div class="dialog-cover" data-slot="cover"></div>
+                <div class="dialog-copy">
+                  <p class="kicker">에디토리얼 · 2026</p>
+                  <h3 id="dialog-title">겨울 시장</h3>
+                  <dl class="dialog-meta">
+                    <div><dt>역할</dt><dd>아트 디렉션</dd></div>
+                    <div><dt>클라이언트</dt><dd>겨울 시장 (가상)</dd></div>
+                    <div><dt>연도</dt><dd>2026</dd></div>
+                  </dl>
+                  <p class="prose">성수 골목을 무대로 한 가상 윈터 마켓의 인쇄 룩북 24면입니다. 상품 사진 대신 이름과 가격만 남기고, 표지는 붉은 아치 하나로 시즌을 말하게 했습니다.</p>
+                  <p class="prose">내지 그리드, 표지, 상품 인덱스를 맞췄습니다. 눈송이 장식은 넣지 않았습니다.</p>
+                </div>
+              </template>
+            </article>
+
+            <article class="card project" id="project-post" data-category="package" data-search="느린 우편 패키지 2026 우표 봉투 문구 package">
+              <div class="cover cover-stamp" aria-hidden="true"><span></span><span></span><span></span></div>
+              <p class="kicker">패키지 · 2026</p>
+              <h3>느린 우편</h3>
+              <p class="desc">받는 사람 이름이 주인공인 우표와 봉투. 장식은 모서리만.</p>
+              <a class="text-link" href="#project-post" aria-haspopup="dialog">기록 보기 <span aria-hidden="true">→</span><span class="sr-only">, 느린 우편</span></a>
+              <span class="wm" aria-hidden="true">02</span>
+              <template>
+                <div class="dialog-cover" data-slot="cover"></div>
+                <div class="dialog-copy">
+                  <p class="kicker">패키지 · 2026</p>
+                  <h3 id="dialog-title">느린 우편</h3>
+                  <dl class="dialog-meta">
+                    <div><dt>역할</dt><dd>문구 패키지</dd></div>
+                    <div><dt>클라이언트</dt><dd>느린 우편 (가상)</dd></div>
+                    <div><dt>연도</dt><dd>2026</dd></div>
+                  </dl>
+                  <p class="prose">한 달에 한 통만 부치는 가상 우편 클럽의 세트입니다. 우표 네 장, 봉투, 카드로 이루어져 있고 받는 사람 칸을 가장 넓게 잡았습니다.</p>
+                  <p class="prose">장식은 모서리의 구멍 무늬뿐입니다. 주소가 먼저 읽히도록 이름을 본문보다 한 단계 크게 두었습니다.</p>
+                </div>
+              </template>
+            </article>
+
+            <article class="card project" id="project-moon" data-category="package" data-search="달빛 제과 패키지 2025 설 선물 상자 금박 리본 package">
+              <div class="cover cover-moon" aria-hidden="true"><span></span><span></span><span></span></div>
+              <p class="kicker">패키지 · 2025</p>
+              <h3>달빛 제과</h3>
+              <p class="desc">설 선물 상자의 리본과 금박. 조명 아래에서 무늬가 올라옵니다.</p>
+              <a class="text-link" href="#project-moon" aria-haspopup="dialog">기록 보기 <span aria-hidden="true">→</span><span class="sr-only">, 달빛 제과</span></a>
+              <span class="wm" aria-hidden="true">03</span>
+              <template>
+                <div class="dialog-cover" data-slot="cover"></div>
+                <div class="dialog-copy">
+                  <p class="kicker">패키지 · 2025</p>
+                  <h3 id="dialog-title">달빛 제과</h3>
+                  <dl class="dialog-meta">
+                    <div><dt>역할</dt><dd>패키지 디자인</dd></div>
+                    <div><dt>클라이언트</dt><dd>달빛 제과 (가상)</dd></div>
+                    <div><dt>연도</dt><dd>2025</dd></div>
+                  </dl>
+                  <p class="prose">명절 선물 세트의 상자, 리본 태그, 금박 패턴입니다. 달 모양 하나와 리본 결로 시즌을 설명하고 제품 사진은 넣지 않았습니다.</p>
+                  <p class="prose">전개도와 금박 위치를 먼저 정한 뒤, 매장 조명에서 무늬가 과하게 번지지 않도록 간격을 넓혔습니다.</p>
+                </div>
+              </template>
+            </article>
+
+            <article class="card project" id="project-market" data-category="digital" data-search="한강 야시장 디지털 2025 캠페인 배너 등불 digital">
+              <div class="cover cover-lanterns" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+              <p class="kicker">디지털 · 2025</p>
+              <h3>한강 야시장</h3>
+              <p class="desc">등불 색만 남긴 야간 장터의 첫 화면과 스토리 배너.</p>
+              <a class="text-link" href="#project-market" aria-haspopup="dialog">기록 보기 <span aria-hidden="true">→</span><span class="sr-only">, 한강 야시장</span></a>
+              <span class="wm" aria-hidden="true">04</span>
+              <template>
+                <div class="dialog-cover" data-slot="cover"></div>
+                <div class="dialog-copy">
+                  <p class="kicker">디지털 · 2025</p>
+                  <h3 id="dialog-title">한강 야시장</h3>
+                  <dl class="dialog-meta">
+                    <div><dt>역할</dt><dd>캠페인 배너</dd></div>
+                    <div><dt>클라이언트</dt><dd>한강 야시장 (가상)</dd></div>
+                    <div><dt>연도</dt><dd>2025</dd></div>
+                  </dl>
+                  <p class="prose">가상 야시장의 시즌 첫 화면, 스토리 세 장, 지도 마커입니다. 배경은 어둡게 두고 등불 색만 산호와 금으로 남겼습니다.</p>
+                  <p class="prose">글자는 시장 이름과 오늘 날짜뿐입니다. 메뉴 목록은 일부러 첫 화면에서 뺐습니다.</p>
+                </div>
+              </template>
+            </article>
+
+            <article class="card project" id="project-gallery" data-category="editorial" data-search="소풍 갤러리 에디토리얼 2025 전시 포스터 editorial">
+              <div class="cover cover-posters" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+              <p class="kicker">에디토리얼 · 2025</p>
+              <h3>소풍 갤러리</h3>
+              <p class="desc">같은 그리드, 다른 큰 글자. 세 시즌을 잇는 전시 포스터.</p>
+              <a class="text-link" href="#project-gallery" aria-haspopup="dialog">기록 보기 <span aria-hidden="true">→</span><span class="sr-only">, 소풍 갤러리</span></a>
+              <span class="wm" aria-hidden="true">05</span>
+              <template>
+                <div class="dialog-cover" data-slot="cover"></div>
+                <div class="dialog-copy">
+                  <p class="kicker">에디토리얼 · 2025</p>
+                  <h3 id="dialog-title">소풍 갤러리</h3>
+                  <dl class="dialog-meta">
+                    <div><dt>역할</dt><dd>전시 포스터</dd></div>
+                    <div><dt>클라이언트</dt><dd>소풍 갤러리 (가상)</dd></div>
+                    <div><dt>연도</dt><dd>2025</dd></div>
+                  </dl>
+                  <p class="prose">봄, 여름, 가을 기획전 포스터 세 장입니다. 그리드와 여백은 같고, 전시 제목의 크기만 계절마다 달라집니다.</p>
+                  <p class="prose">설명을 줄이고 날짜와 장소만 아래에 두었습니다. 세 장이 나란히 붙어도 한 가족처럼 보이게 맞췄습니다.</p>
+                </div>
+              </template>
+            </article>
+
+            <article class="card project" id="project-books" data-category="brand" data-search="페이지 서점 브랜딩 2024 워드마크 사인 북촌 brand">
+              <div class="cover cover-books" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+              <p class="kicker">브랜딩 · 2024</p>
+              <h3>페이지 서점</h3>
+              <p class="desc">북촌의 작은 서점을 위한 워드마크와 서가 끝 사인.</p>
+              <a class="text-link" href="#project-books" aria-haspopup="dialog">기록 보기 <span aria-hidden="true">→</span><span class="sr-only">, 페이지 서점</span></a>
+              <span class="wm" aria-hidden="true">06</span>
+              <template>
+                <div class="dialog-cover" data-slot="cover"></div>
+                <div class="dialog-copy">
+                  <p class="kicker">브랜딩 · 2024</p>
+                  <h3 id="dialog-title">페이지 서점</h3>
+                  <dl class="dialog-meta">
+                    <div><dt>역할</dt><dd>아이덴티티</dd></div>
+                    <div><dt>클라이언트</dt><dd>페이지 서점 (가상)</dd></div>
+                    <div><dt>연도</dt><dd>2024</dd></div>
+                  </dl>
+                  <p class="prose">북촌의 가상 서점을 위한 워드마크, 쇼핑백, 서가 분류 딱지입니다. 서점 이름은 짧게, 분류 딱지는 멀리서도 색으로 구분되게 했습니다.</p>
+                  <p class="prose">표시 서체는 굵게, 서가 안쪽의 작은 글씨는 읽기 부담이 없도록 한 단계 가볍게 두었습니다.</p>
+                </div>
+              </template>
+            </article>
+
+            <article class="card project" id="project-mag" data-category="editorial" data-search="계간 온기 에디토리얼 2024 겨울호 잡지 지면 editorial">
+              <div class="cover cover-magazine" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+              <p class="kicker">에디토리얼 · 2024</p>
+              <h3>계간 온기</h3>
+              <p class="desc">겨울호 표지와 내지. 빨강은 꼭지 번호에만 썼습니다.</p>
+              <a class="text-link" href="#project-mag" aria-haspopup="dialog">기록 보기 <span aria-hidden="true">→</span><span class="sr-only">, 계간 온기</span></a>
+              <span class="wm" aria-hidden="true">07</span>
+              <template>
+                <div class="dialog-cover" data-slot="cover"></div>
+                <div class="dialog-copy">
+                  <p class="kicker">에디토리얼 · 2024</p>
+                  <h3 id="dialog-title">계간 온기</h3>
+                  <dl class="dialog-meta">
+                    <div><dt>역할</dt><dd>지면 디자인</dd></div>
+                    <div><dt>클라이언트</dt><dd>계간 온기 (가상)</dd></div>
+                    <div><dt>연도</dt><dd>2024</dd></div>
+                  </dl>
+                  <p class="prose">가상 문예지 겨울호의 표지, 목차, 인터뷰 오프닝입니다. 빨강은 꼭지 번호에만 쓰고 본문은 따뜻한 검정이 맡습니다.</p>
+                  <p class="prose">표지에는 호수와 제호만 두었습니다. 내지 여백을 넉넉히 잡아 문장이 먼저 쉬게 했습니다.</p>
+                </div>
+              </template>
+            </article>
+
+            <article class="card project" id="project-app" data-category="digital" data-search="아침식사 클럽 디지털 2024 앱 아이콘 빈 화면 digital">
+              <div class="cover cover-app" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+              <p class="kicker">디지털 · 2024</p>
+              <h3>아침식사 클럽</h3>
+              <p class="desc">차린 것이 없어도 따뜻한 앱 아이콘과 빈 화면.</p>
+              <a class="text-link" href="#project-app" aria-haspopup="dialog">기록 보기 <span aria-hidden="true">→</span><span class="sr-only">, 아침식사 클럽</span></a>
+              <span class="wm" aria-hidden="true">08</span>
+              <template>
+                <div class="dialog-cover" data-slot="cover"></div>
+                <div class="dialog-copy">
+                  <p class="kicker">디지털 · 2024</p>
+                  <h3 id="dialog-title">아침식사 클럽</h3>
+                  <dl class="dialog-meta">
+                    <div><dt>역할</dt><dd>앱 비주얼</dd></div>
+                    <div><dt>클라이언트</dt><dd>아침식사 클럽 (가상)</dd></div>
+                    <div><dt>연도</dt><dd>2024</dd></div>
+                  </dl>
+                  <p class="prose">식탁 위 가상 커뮤니티 앱의 아이콘, 홈, 빈 상태 화면입니다. 음식 사진 없이 그릇 실루엣과 따뜻한 바닥색만 사용했습니다.</p>
+                  <p class="prose">빈 화면의 문장은 한 줄입니다. 아직 차린 것이 없어도 앱이 차갑게 보이지 않게 하는 쪽이 과제였습니다.</p>
+                </div>
+              </template>
+            </article>
+
+            <article class="card project" id="project-beans" data-category="package" data-search="모노 로스터스 패키지 2023 원두 라벨 커피 package">
+              <div class="cover cover-beans" aria-hidden="true"><span></span><span></span><span></span></div>
+              <p class="kicker">패키지 · 2023</p>
+              <h3>모노 로스터스</h3>
+              <p class="desc">산미를 색 띠로 나눈 원두 라벨. 한 줄이면 고를 수 있게.</p>
+              <a class="text-link" href="#project-beans" aria-haspopup="dialog">기록 보기 <span aria-hidden="true">→</span><span class="sr-only">, 모노 로스터스</span></a>
+              <span class="wm" aria-hidden="true">09</span>
+              <template>
+                <div class="dialog-cover" data-slot="cover"></div>
+                <div class="dialog-copy">
+                  <p class="kicker">패키지 · 2023</p>
+                  <h3 id="dialog-title">모노 로스터스</h3>
+                  <dl class="dialog-meta">
+                    <div><dt>역할</dt><dd>라벨 디자인</dd></div>
+                    <div><dt>클라이언트</dt><dd>모노 로스터스 (가상)</dd></div>
+                    <div><dt>연도</dt><dd>2023</dd></div>
+                  </dl>
+                  <p class="prose">산지에 따라 색 띠만 다른 원두 라벨 네 종입니다. 이름은 크게, 테이스팅 노트는 한 줄로 줄였습니다.</p>
+                  <p class="prose">라이트와 다크는 띠의 명도만 봐도 갈리게 단계를 나눴습니다. 원두 그림은 넣지 않았습니다.</p>
+                </div>
+              </template>
+            </article>
+
+            <article class="card project" id="project-flower" data-category="brand" data-search="남산 꽃집 브랜딩 2023 워드마크 쇼윈도 사인 brand">
+              <div class="cover cover-stem" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+              <p class="kicker">브랜딩 · 2023</p>
+              <h3>남산 꽃집</h3>
+              <p class="desc">꽃 그림 대신 줄기 한 줄. 쇼윈도 시트와 워드마크.</p>
+              <a class="text-link" href="#project-flower" aria-haspopup="dialog">기록 보기 <span aria-hidden="true">→</span><span class="sr-only">, 남산 꽃집</span></a>
+              <span class="wm" aria-hidden="true">10</span>
+              <template>
+                <div class="dialog-cover" data-slot="cover"></div>
+                <div class="dialog-copy">
+                  <p class="kicker">브랜딩 · 2023</p>
+                  <h3 id="dialog-title">남산 꽃집</h3>
+                  <dl class="dialog-meta">
+                    <div><dt>역할</dt><dd>사인 시스템</dd></div>
+                    <div><dt>클라이언트</dt><dd>남산 꽃집 (가상)</dd></div>
+                    <div><dt>연도</dt><dd>2023</dd></div>
+                  </dl>
+                  <p class="prose">가상 꽃집의 워드마크, 쇼윈도 시트, 포장지, 영수증 도장입니다. 꽃다발 그림 대신 줄기 한 줄로 업종을 짐작하게 했습니다.</p>
+                  <p class="prose">유리 위에서는 흰색, 포장지에서는 빨강으로 같은 마크가 뒤집혀 읽힙니다.</p>
+                </div>
+              </template>
+            </article>
+
+            <article class="card project" id="project-bus" data-category="digital" data-search="야간 버스 디지털 2023 노선 정류장 앱 digital">
+              <div class="cover cover-route" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+              <p class="kicker">디지털 · 2023</p>
+              <h3>야간 버스</h3>
+              <p class="desc">마지막 차의 노선 화면. 다음 정류장만 크고 또렷하게.</p>
+              <a class="text-link" href="#project-bus" aria-haspopup="dialog">기록 보기 <span aria-hidden="true">→</span><span class="sr-only">, 야간 버스</span></a>
+              <span class="wm" aria-hidden="true">11</span>
+              <template>
+                <div class="dialog-cover" data-slot="cover"></div>
+                <div class="dialog-copy">
+                  <p class="kicker">디지털 · 2023</p>
+                  <h3 id="dialog-title">야간 버스</h3>
+                  <dl class="dialog-meta">
+                    <div><dt>역할</dt><dd>노선 화면</dd></div>
+                    <div><dt>클라이언트</dt><dd>야간 버스 (가상)</dd></div>
+                    <div><dt>연도</dt><dd>2023</dd></div>
+                  </dl>
+                  <p class="prose">심야 버스 가상 앱의 노선 카드와 정류장 리스트입니다. 지도는 선 하나로 단순화하고 다음 정류장을 가장 크게 두었습니다.</p>
+                  <p class="prose">마지막 차라는 정보가 색보다 먼저 읽히도록 문구를 짧게 고정했습니다.</p>
+                </div>
+              </template>
+            </article>
+
+            <article class="card project" id="project-pharm" data-category="brand" data-search="골목 약국 브랜딩 2022 리브랜딩 간판 봉투 brand">
+              <div class="cover cover-pharmacy" aria-hidden="true"><span></span><span></span><span></span></div>
+              <p class="kicker">브랜딩 · 2022</p>
+              <h3>골목 약국</h3>
+              <p class="desc">동네 약국의 간판과 봉투를 한 세트의 빨강으로 다시 맞췄습니다.</p>
+              <a class="text-link" href="#project-pharm" aria-haspopup="dialog">기록 보기 <span aria-hidden="true">→</span><span class="sr-only">, 골목 약국</span></a>
+              <span class="wm" aria-hidden="true">12</span>
+              <template>
+                <div class="dialog-cover" data-slot="cover"></div>
+                <div class="dialog-copy">
+                  <p class="kicker">브랜딩 · 2022</p>
+                  <h3 id="dialog-title">골목 약국</h3>
+                  <dl class="dialog-meta">
+                    <div><dt>역할</dt><dd>리브랜딩</dd></div>
+                    <div><dt>클라이언트</dt><dd>골목 약국 (가상)</dd></div>
+                    <div><dt>연도</dt><dd>2022</dd></div>
+                  </dl>
+                  <p class="prose">가상 동네 약국의 리브랜딩입니다. 간판 워드마크, 처방전 봉투, 선반 라벨을 한 세트로 맞췄습니다.</p>
+                  <p class="prose">채도를 한 단계 낮춰 급해 보이지 않게 했고, 약 이름은 선반 앞에서 바로 읽히게 크게 두었습니다.</p>
+                </div>
+              </template>
+            </article>
+          </div>
+          <div class="empty" id="empty" hidden>
+            <p>해당하는 작업이 없습니다.</p>
+            <button type="button" class="linkish" id="reset-filters">전체 작업 보기</button>
+          </div>
+        </section>
+
+        <section class="block" id="voices" aria-labelledby="voices-title">
+          <div class="section-head">
+            <h2 id="voices-title">작업 후기</h2>
+            <p class="lead">가상 클라이언트의 말입니다.</p>
+          </div>
+          <p class="sublead">아래 이름과 상호는 실존 인물, 실존 매장이 아닙니다.</p>
+          <div class="quotes">
+            <figure class="card quote">
+              <span class="qmark" aria-hidden="true">“</span>
+              <blockquote>
+                <p>상자를 열기 전에 이미 명절이었어요. 매장 앞에서 사진을 찍는 손님이 생겼습니다.</p>
+              </blockquote>
+              <figcaption>
+                <strong>박민재</strong>
+                <span>달빛 제과 대표 · 가상 인물</span>
+              </figcaption>
+            </figure>
+            <figure class="card quote">
+              <span class="qmark" aria-hidden="true">“</span>
+              <blockquote>
+                <p>표지를 설명하는 데 회의가 필요 없었습니다. 독자들이 겨울호를 책상 위에 그대로 두더군요.</p>
+              </blockquote>
+              <figcaption>
+                <strong>최유나</strong>
+                <span>계간 온기 편집장 · 가상 인물</span>
+              </figcaption>
+            </figure>
+            <figure class="card quote">
+              <span class="qmark" aria-hidden="true">“</span>
+              <blockquote>
+                <p>라벨 색만 보고 원두를 고르는 손님이 늘었습니다. 매대가 조용해지니 향이 더 잘 보입니다.</p>
+              </blockquote>
+              <figcaption>
+                <strong>이도훈</strong>
+                <span>모노 로스터스 오너 · 가상 인물</span>
+              </figcaption>
+            </figure>
+            <figure class="card quote">
+              <span class="qmark" aria-hidden="true">“</span>
+              <blockquote>
+                <p>포스터가 전시를 미리 말하지 않아서 좋았습니다. 세 장이 한 가족처럼 보입니다.</p>
+              </blockquote>
+              <figcaption>
+                <strong>한지율</strong>
+                <span>소풍 갤러리 큐레이터 · 가상 인물</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="block" id="profile" aria-labelledby="profile-title">
+          <div class="card profile">
+            <h2 id="profile-title"><span class="mark" aria-hidden="true"></span>정서아 (아틀리에 서아)</h2>
+            <p class="sublead">브랜드의 온도와 첫 화면을 설계하는 가상 디자이너. 실존 인물이 아닙니다.</p>
+            <dl class="meta">
+              <dt>분야</dt>
+              <dd>브랜딩 · 에디토리얼 · 패키지 · 디지털</dd>
+              <dt>기반</dt>
+              <dd>서울 성수 (가상 설정)</dd>
+              <dt>도구</dt>
+              <dd>벡터 · 타이포 · 인쇄 시안</dd>
+              <dt>스타일</dt>
+              <dd>플랫 미니멀 · 따뜻한 빨강</dd>
+              <dt>활동</dt>
+              <dd>2018 – 2026 (가상 연혁)</dd>
+              <dt>안내</dt>
+              <dd>더미 데이터 · 열람 전용</dd>
+            </dl>
+          </div>
+        </section>
+
+        <section class="block" id="contact" aria-labelledby="contact-title">
+          <div class="section-head">
+            <h2 id="contact-title">연락</h2>
+            <p class="lead">서버에 저장하지 않습니다.</p>
+          </div>
+          <div class="contact-grid">
+            <div>
+              <p class="sublead">가상 스튜디오 아틀리에 서아입니다. 주소는 존재하지 않는 예시 도메인이라 메일이 실제로 도착하지 않습니다.</p>
+              <ul class="contact-list">
+                <li>
+                  <a href="mailto:hello@atelier-seoa.example">
+                    <strong>이메일</strong>
+                    <span>hello@atelier-seoa.example</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://example.com/seoa-atelier" target="_blank" rel="noopener noreferrer">
+                    <strong>인스타그램</strong>
+                    <span>@seoa.atelier · 가상 링크, 새 창</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://example.com/seoa-studio" target="_blank" rel="noopener noreferrer">
+                    <strong>비핸스</strong>
+                    <span>seoa-studio · 가상 링크, 새 창</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <form class="card form-card" id="contact-form" action="mailto:hello@atelier-seoa.example" method="post" enctype="text/plain" novalidate>
+              <p class="kicker">화면에서만 작성</p>
+              <h3 class="form-title">메일 앱으로 보내기</h3>
+              <div class="form-row">
+                <div class="field">
+                  <label for="name">이름</label>
+                  <input id="name" name="name" type="text" autocomplete="name" maxlength="80" required placeholder="홍길동">
+                  <p class="field-error" id="err-name" hidden></p>
+                </div>
+                <div class="field">
+                  <label for="email">이메일</label>
+                  <input id="email" name="email" type="email" autocomplete="email" maxlength="120" required placeholder="you@example.com">
+                  <p class="field-error" id="err-email" hidden></p>
+                </div>
+              </div>
+              <div class="field">
+                <label for="topic">관심 분야</label>
+                <select id="topic" name="topic">
+                  <option>브랜딩</option>
+                  <option>에디토리얼</option>
+                  <option>패키지</option>
+                  <option>디지털</option>
+                  <option>아직 모르겠어요</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="message">메시지</label>
+                <textarea id="message" name="message" maxlength="1000" required placeholder="어떤 작업인지 짧게 적어 주세요."></textarea>
+                <p class="field-error" id="err-message" hidden></p>
+              </div>
+              <p class="form-note">보내기를 눌러도 서버로 전송되지 않습니다. 이 브라우저가 메일 앱을 열고, 같은 내용을 아래에 보여 줍니다.</p>
+              <button class="btn-red" type="submit">메일 앱으로 작성하기</button>
+              <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+              <pre id="mail-preview" class="mail-preview" hidden></pre>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="logo" href="#top">서아</a>
+        <p>© 2026 아틀리에 서아. 정서아와 수록된 작업, 후기, 연락처는 모두 열람용 허구입니다.</p>
+        <a class="to-top" href="#top">맨 위로</a>
+      </div>
+    </footer>
+
+    <dialog id="project-dialog" aria-labelledby="dialog-title">
+      <button type="button" class="dialog-close">닫기</button>
+      <div id="dialog-body"></div>
+    </dialog>
+    <script src="main.js"></script>
+  </body>
+</html>
